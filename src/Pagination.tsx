@@ -40,11 +40,11 @@ const Pagination = () => {
     return (
         <div>
             <h1>Simple Pagination</h1>
-            <ol>
+            <ul>
                 {currentItemsPage?.map((item, index) => (
-                    <li key={index} className="content__title">{item.title}</li>
+                    <li key={index} data-testid={`title-item-${index}`} className="content__title">{item.title}</li>
                 ))}
-            </ol>
+            </ul>
             <div>
 
                 <ul className='page__number'>
